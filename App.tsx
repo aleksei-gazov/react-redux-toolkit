@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './style.css';
-import CountUseReducer from './CountUseReducer';
+import CountUseReducer, { CountUseReducerWRAPPER } from './CountUseReducer';
 // import { useSelector, useDispatch } from 'react-redux';
 // import {increment, decrement,  reset} from './reducer_Slice';
 export default function App() {
@@ -16,7 +16,8 @@ export default function App() {
 <button onClick={()=>dispatch(decrement())}>-</button>
 <button onClick={()=>dispatch( reset())}>reset</button> */}
 <hr/>
-<CountUseReducer/>
+{/* <CountUseReducer/> */}
+<CountUseReducerWRAPPER/>
      </div>
   );
 }
